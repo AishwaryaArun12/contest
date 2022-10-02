@@ -4,7 +4,14 @@ import React, { useState } from 'react';
 
 export default function App() {
  //code here 
-
+const [text,setText]=useState('');
+function buttonClick(){
+  setText(text=>text+value)
+}
+const value='';
+function changeInput(e){
+  value=e.target.value;
+}
  
   return (
     <div>
