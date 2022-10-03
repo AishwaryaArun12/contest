@@ -6,7 +6,8 @@ export default function App() {
  //code here 
 const [text,setText]=useState('');
  const [inputValue,setInputValue]=useState('');
-function buttonClick(){
+function buttonClick(e){
+ e.preventDefault();
  setInputValue('');
   setText(text=>text+value)
 }
