@@ -5,12 +5,14 @@ import React, { useState } from 'react';
 export default function App() {
  //code here 
 const [text,setText]=useState('');
+ const [inputValue,setInputValue]=useState('');
 function buttonClick(){
+ setInputValue('');
   setText(text=>text+value)
 }
-const value='';
+
 function changeInput(e){
-  value=e.target.value;
+  setInputValue(e.target.value);
 }
  
   return (
