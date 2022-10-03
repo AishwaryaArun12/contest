@@ -8,8 +8,8 @@ const [text,setText]=useState('');
  const [inputValue,setInputValue]=useState('');
 function buttonClick(e){
  e.preventDefault();
+  setText(text=>text+inputValue)
  setInputValue('');
-  setText(text=>text+value)
 }
 
 function changeInput(e){
